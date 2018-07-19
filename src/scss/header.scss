@@ -1,0 +1,61 @@
+.header{
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &__top{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    @include to(xl){
+        background: color(inverse);
+    }
+    @include from(xl){
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.header{
+    &__top{
+        form{
+            display: flex;
+            @include to(l){
+                display: none;
+            }
+        }
+        input{
+            display: block;
+            line-height: 2rem;
+            padding: 0 1rem;
+            background: none;
+            border: 1px solid rgba(white,.2);
+            color: white;
+            &:focus{
+                outline: none;
+            }
+        }
+        .icon-user-outline{
+            padding: 1rem;
+            margin-left: 2rem;
+            background: rgba(white,.2);
+            border-radius: 5px;
+        }
+    }
+    &__nav{
+        .cart-in-menu{
+            background: color(color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i::before{
+                margin-right: 1rem;
+            }
+            i:hover{
+                color: white;
+            }
+        }
+    }
+}
