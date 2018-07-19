@@ -9,9 +9,6 @@
             font-size: 1.4rem;
             cursor: pointer;
         }
-        // [class*="icon-"]:hover::before{
-        //     color: color(color);
-        // }
         @include to(l){
             display: flex;
             justify-content: space-between;

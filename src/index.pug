@@ -1,3 +1,9 @@
-extends blocks/template
+extends template/home
 block main
-   
+    include blocks/slider
+    include blocks/sub-banner
+    section.sn-container
+        .sn-item.site
+            h2.site__title Productos Destacados
+        .sn-item
+            include blocks/products

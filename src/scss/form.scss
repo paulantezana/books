@@ -1,0 +1,22 @@
+form{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    textarea,
+    input{
+        display: block;
+        border: 1px solid #DDD;
+        margin-bottom: 1rem;
+        line-height: 2.5em;
+        width: 100%;
+        padding: 0 .5rem;
+    }
+    [type*="submit"]{
+        background: color(color);
+        color: white;
+        line-height: 3em;
+    }
+    .required{
+        color: color(alert);
+        font-size: 1.2rem;
+    }
+}

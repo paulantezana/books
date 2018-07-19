@@ -84,6 +84,30 @@ module.exports = {
             },
             hash        : false,
             template    : './src/index.pug',
+        }),
+        new HtmlWebpackPlugin({
+            filename    : 'drama.html',
+            minify      : {
+                collapseWhitespace: false
+            },
+            hash        : false,
+            template    : './src/drama.pug',
+        }),
+        new HtmlWebpackPlugin({
+            filename    : 'ficcion.html',
+            minify      : {
+                collapseWhitespace: false
+            },
+            hash        : false,
+            template    : './src/ficcion.pug',
+        }),
+        new HtmlWebpackPlugin({
+            filename    : 'contact.html',
+            minify      : {
+                collapseWhitespace: false
+            },
+            hash        : false,
+            template    : './src/contact.pug',
         })
     ]
 };

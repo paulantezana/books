@@ -11,10 +11,16 @@
     }
     @include from(xl){
         position: absolute;
+        &--page{
+            position: relative;
+        }
         z-index: 100;
         top: 0;
         left: 0;
         width: 100%;
+    }
+    &--page{
+        background: color(color,2);
     }
 }
 

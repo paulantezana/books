@@ -1,0 +1,20 @@
+extends template/page
+block main
+    .sn-container
+        .sn-item.site
+            h2.site__title Contacto
+        .sn-item
+            form(action="")
+                    label(for="nombre") Nombre
+                        span.required *
+                    input#nombre(type="text", name="nombre" required placeholder="Nombre")
+                    label(for="asunto" required) Asunto 
+                        span.required *
+                    input#asunto(type="text", name="asunto" required placeholder="Asunto")
+                    label(for="correo") Correo
+                        span.required *
+                    input#correo(type="email", name="correo" required placeholder="Correo")
+                    label(for="comentario") Comentario
+                        span.required *
+                    textarea#comentario(name="comentario", cols="30", rows="10" required)
+                    input(type="submit", value="Enviar")

@@ -1,0 +1,13 @@
+.site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        text-align: center;
+        border-bottom: 2px solid color(color);
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
