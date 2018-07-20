@@ -54,6 +54,11 @@ module.exports = {
                 use     : ['html-loader','pug-html-loader']
             },
 
+            {
+                test    : /\.json$/,
+                use     : 'json-loader'
+            },
+
             { 
                 test: /\.js$/, 
                 exclude: /node_modules/, 
