@@ -1,19 +1,16 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// const extractCSS = new ExtractTextPlugin('stylesheets/[name]-one.css');
-// const extractLESS = new ExtractTextPlugin('stylesheets/[name]-two.css');
-
 const path = require('path');
 
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'main.js'
     },
     devServer: {
-        contentBase : path.join(__dirname, "dist"),
+        contentBase : path.join(__dirname, "docs"),
         compress    : false,
         port        : 3000,
         open        : true,
